@@ -14,3 +14,10 @@ Crear una funcion con letra mayusculas
 Exportar la funcion
 Debe devolver una sola cosa
 Cuando se devuelve mas de una cosa de utilizan los FRAGMENTS '<></>'
+
+
+Que suele contener un componente
+    -Props
+    -State
+    -Ciclo de vida
+    
