@@ -20,4 +20,5 @@ Que suele contener un componente
     -Props
     -State
     -Ciclo de vida
-    
+    -Metodos de ciclo de vida
+        

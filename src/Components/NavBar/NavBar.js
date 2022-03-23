@@ -4,7 +4,8 @@ import { Nav } from 'react-bootstrap';
 import { Container } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-const NavBar = () => {
+const NavBar = (pepe) => {
+    console.log(pepe);
     return (
         <>
         <div>
