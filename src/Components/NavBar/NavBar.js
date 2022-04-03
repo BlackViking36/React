@@ -4,8 +4,8 @@ import { Nav } from 'react-bootstrap';
 import { Container } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-const NavBar = (pepe) => {
-    console.log(pepe);
+const NavBar = (props) => {
+    console.log(props);
     return (
         <>
         <div>

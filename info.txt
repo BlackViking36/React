@@ -21,4 +21,27 @@ Que suele contener un componente
     -State
     -Ciclo de vida
     -Metodos de ciclo de vida
-        
+
+hooks:
+    -useState:permite cambiar el estado de un componente y por ende provoca un re-render
+    -useEffect: permite ejecutar una funcion cuando el componente se renderiza
+
+Ciclos de vida con class:
+    -mount: componente se monta
+    -update: componente se actualiza
+    -unmount: componente se desmonta
+
+    MOUNT: 
+        -Constructor: se ejecuta al crear el componente
+        -Render: se ejecuta al renderizar el componente
+        -componentDidMount: se ejecuta al montar el componente
+    
+    UPDATE:
+        -Render: se ejecuta al renderizar el componente
+        -shouldComponentUpdate: se ejecuta antes de actualizar el componente
+    
+    UNMOUNT:
+        -componentWillUnmount: se ejecuta antes de desmontar el componente
+
+
+    useEffect(() => {}, [])
