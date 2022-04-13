@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import './ItemCount.css';
+import CartWidget from '../NavBar/CartWidget/CartWidget';
+import { Button } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+// import './ItemCount.css';
 
 const ItemCount = ({initial, stock, onAdd}) => {
     const [count, setCount] = useState(1)
@@ -22,12 +25,27 @@ const ItemCount = ({initial, stock, onAdd}) => {
         }
     }
 
+    const styleCounter = {
+        backgroundColor: 'darkgray',
+        display: 'flex',
+        justifyContent: 'center',
+        textAlign: 'center'
+    }
+
+    const styleCards = {
+        justifyContent: 'center',
+        margin: '5px',
+        color: 'black',
+        width: '5vh',
+        backgroundColor: '#FFF'
+    }
+
     return(
-        <div className='iCounter'>
-            <button className='btn btn-primary' onClick={decrement}>-</button> 
-            <p className='itemCount'>{count}</p>
-            <button className='btn btn-primary' onClick={increment}>+</button>
-            <button className='btn btn-primary addCarrito' onClick={() => onAdd(count)}>Agregar al carrito</button>
+        <div className='iCounter' style={styleCounter}>
+            <Button variant="secondary" size="sm" onClick={decrement}>-</Button> 
+            <p className='itemCount' style={styleCards}>{count}</p>
+            <Button variant="secondary" size="sm" onClick={increment}>+</Button>
+            <Button variant="secondary" size="sm" onClick={() => onAdd(count)}><CartWidget /></Button>
         </div>
     )
 } 

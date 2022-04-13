@@ -29,10 +29,21 @@ const ItemList = () =>{
         }
     }
 
+    const styleCardGeneral = {
+        textAlign: 'center'
+    }
+
+    const styleCard = {
+        display: 'inline-block',
+        justifyItems: 'center',
+        margin: '10px',
+        border: '3px solid black'
+    }
+
     return(
-        <div className='cardGeneral'>
+        <div className='cardGeneral' style={styleCardGeneral}>
         {Productos.map((Productos) =>(
-            <div className='cardGeneral card col-sm-12 col-lg-3'>
+            <div className='cardGeneral card col-sm-12 col-lg-3' style={styleCard}>
                 <img src={Productos.imagen} id="img" className="card-img-top " alt="..." />
                 <div className="card-body">
                     <h5 className="card-title">{Productos.nombre}</h5>
