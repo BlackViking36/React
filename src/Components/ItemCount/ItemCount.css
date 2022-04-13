@@ -1,0 +1,49 @@
+.iCounter {
+    display: flex;
+
+    justify-content: center;
+    text-align: center;
+}
+
+.itemCount {
+
+    justify-content: center;
+    margin: 5px;
+    color: #FFF;
+}
+
+.btnadd {
+    border-radius: 5px;
+}
+
+.addCarrito {
+    margin: 5px;
+    border-radius: 5px;
+    align-content: center;
+}
+
+.itemStock {
+    color: #FFF;
+}
+
+.title {
+    color: #FFF;
+}
+
+.itemCount {
+    justify-content: center;
+    width: 5vh;
+    background-color: #FFF;
+    color: black;
+}
+
+.card {
+    display: inline-block;
+    justify-items: center;
+    margin: 10px;
+
+}
+
+.cardGneral {
+    text-align: center;
+}
