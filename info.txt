@@ -45,3 +45,6 @@ Ciclos de vida con class:
 
 
     useEffect(() => {}, [])
+
+Promesas
+    pending - fulfilled - rejected
